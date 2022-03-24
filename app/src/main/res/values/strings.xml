@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Assist Control</string>
+    <string name="smsalida">Marcar Entrada/Salida Despues de las 12 pm</string>
+    <string name="smentrada">Marcar Entrada/Salida Antes de las 12 pm</string>
+    <string name="smsalida2">Marcar Salida 2</string>
+    <string name="smentrada2">Marcar Entrada 2</string>
+    <string name="sentrada">★ Dato de Entrada ★</string>
+    <string name="ssalida">★ Dato de Salida ★</string>
+    <string name="sedad">Edad</string>
+    <string name="ssexo">Sexo</string>
+    <string name="sinstitucion">Institución</string>
+    <string name="sidentificador">Identificador</string>
+    <string name="sconectadoa">Conectado a:</string>
+    <string name="title_activity_recuperar_contrasena">RecuperarContrasena</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="changed_to">Notificación cambiada a las %s</string>
+    <string name="time_selected_is">La hora seleccionada es:</string>
+    <string name="change_time">Cambia la hora</string>
+    <string name="select_time">Selecciona la hora</string>
+    <string name="new_notification">Recuerde Marcar Entrada/Salida.</string>
+
+    <string name="tt_time_gmt">%1$s</string>
+    <string name="tt_time_pst">TrueTime: %1$s [PST]</string>
+    <string name="tt_time_device">Device Time: %1$s [PST]</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

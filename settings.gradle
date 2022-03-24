@@ -1,0 +1,4 @@
+include ':library-extension-rx'
+include ':library'
+include ':app'
+rootProject.name='Assist Control'

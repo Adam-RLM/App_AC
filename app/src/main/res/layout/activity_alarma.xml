@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_fondo">
+
+  <TextView
+      android:id="@+id/tv2"
+      android:layout_width="317dp"
+      android:layout_height="45dp"
+      android:layout_marginTop="36dp"
+      android:text="Configura tu Alarma"
+      android:textAlignment="center"
+      android:textColor="@android:color/white"
+      android:textSize="29sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+  <TextView
+      android:id="@+id/tv3"
+      android:layout_width="317dp"
+      android:layout_height="45dp"
+      android:layout_marginTop="220dp"
+      android:text="Notificación"
+      android:textAlignment="center"
+      android:textColor="@android:color/white"
+      android:textSize="29sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+  <Button
+      android:id="@+id/config_alarma"
+      android:layout_width="101dp"
+      android:layout_height="42dp"
+      android:layout_marginTop="36dp"
+      android:background="@drawable/botones_fragmentos"
+      android:fontFamily="sans-serif-condensed-medium"
+      android:onClick="configurar"
+      android:text="Aceptar"
+      android:textColor="@drawable/color_btn_fragmentos"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      android:typeface="sans"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.496"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/spinner2_minutos" />
+
+  <Spinner
+      android:id="@+id/spinner_hora"
+      android:layout_width="105sp"
+      android:layout_height="53sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/spinner2_minutos"
+      app:layout_constraintHorizontal_bias="0.598"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView9"
+      app:layout_constraintVertical_bias="0.043" />
+
+  <Spinner
+      android:id="@+id/spinner2_minutos"
+      android:layout_width="105sp"
+      android:layout_height="53sp"
+      android:textAlignment="center"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.735"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView11"
+      app:layout_constraintVertical_bias="0.045" />
+
+  <TextView
+      android:id="@+id/textView9"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Horas"
+      android:textAlignment="center"
+      android:textColor="@android:color/black"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/textView11"
+      app:layout_constraintHorizontal_bias="0.534"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv2"
+      app:layout_constraintVertical_bias="0.025" />
+
+  <TextView
+      android:id="@+id/textView11"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Minutos"
+      android:textAlignment="center"
+      android:textColor="@android:color/black"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.697"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv2"
+      app:layout_constraintVertical_bias="0.023" />
+
+  <Button
+      android:id="@+id/regresar"
+      android:layout_width="101dp"
+      android:layout_height="42dp"
+      android:background="@drawable/botones_fragmentos"
+      android:fontFamily="sans-serif-condensed-medium"
+      android:onClick="configurar"
+      android:text="Regresar"
+      android:textColor="@drawable/color_btn_fragmentos"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      android:typeface="sans"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.496"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/spinner2_minutos"
+      app:layout_constraintVertical_bias="0.082" />
+
+  <ImageButton
+      android:id="@+id/btn_regre"
+      android:layout_width="60dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+      tools:ignore="VectorDrawableCompat" />
+
+  <TextView
+      android:id="@+id/textView12"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="Assist Control"
+      android:textColor="#FFFFFF"
+      android:textSize="30sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/textView16"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="@string/time_selected_is"
+      android:textSize="25sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+  <TextView
+      android:id="@+id/notifications_time"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      tools:text="12:00"
+      android:layout_gravity="center_horizontal"
+      android:gravity="center_horizontal"
+      android:textSize="24sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+  <Button
+      android:id="@+id/change_notification"
+      android:layout_width="150sp"
+      android:layout_height="wrap_content"
+      android:text="@string/change_time"
+      android:textStyle="bold"
+      android:textColor="@color/color_flotante"
+      android:layout_gravity="center_horizontal"
+      android:gravity="center"
+      android:textSize="16sp"
+      android:background="@drawable/botones_fragmentos"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/notifications_time"
+      app:layout_constraintVertical_bias="0.168" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

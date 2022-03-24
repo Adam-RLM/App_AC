@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56sp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:src="@drawable/ic_ico_registro_selec"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/registros"
+        android:layout_width="match_parent"
+        android:layout_height="56sp"
+        android:background="@drawable/color_item_seleccionado"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:src="@drawable/ic_ico_marcar"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/marcar"
+        android:layout_width="match_parent"
+        android:layout_height="56sp"
+        android:background="@drawable/estilo_item_bar"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:src="@drawable/ic_ico_perfil"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/perfil"
+        android:layout_width="match_parent"
+        android:layout_height="56sp"
+        android:background="@drawable/estilo_item_bar"
+        />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

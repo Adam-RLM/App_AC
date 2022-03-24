@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "105430027278",
+    "firebase_url": "https://assist-control-app.firebaseio.com",
+    "project_id": "assist-control-app",
+    "storage_bucket": "assist-control-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105430027278:android:5f1a41fe3bb237c541405f",
+        "android_client_info": {
+          "package_name": "com.example.assistcontrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105430027278-ug9121gi8lmosorskqvkk52kf99qd2jk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.assistcontrol",
+            "certificate_hash": "dd118f72b4608c724b096a6dae2144619b4d2995"
+          }
+        },
+        {
+          "client_id": "105430027278-b2km513npmu54s3oglce907sqa26109p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOdOERdln6gvcaGBHOhWa0j9aL5__0zyc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105430027278-b2km513npmu54s3oglce907sqa26109p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

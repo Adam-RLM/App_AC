@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_fondo"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:background="@drawable/color_de_los_fragmentos"
+        tools:layout_editor_absoluteX="-98sp"
+        tools:layout_editor_absoluteY="16sp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mostrarfecha"
+            android:layout_width="319dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="8sp"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/digitalClock" />
+
+        <com.imankur.analogclockview.AnalogClock
+            android:id="@+id/analogClock"
+            android:layout_width="170sp"
+            android:layout_height="170sp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </com.imankur.analogclockview.AnalogClock>
+
+        <DigitalClock
+            android:id="@+id/digitalClock"
+            android:layout_width="192dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/analogClock" />
+
+        <Button
+            android:id="@+id/boton_marcar_entrada"
+            android:layout_width="320sp"
+            android:layout_height="55sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/botones_fragmentos"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:onClick="met_marca_entrada"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:text="@string/smentrada"
+            android:textColor="@drawable/color_btn_fragmentos"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alarma_notificaciones"
+            app:layout_constraintVertical_bias="0.474" />
+
+        <Button
+            android:id="@+id/boton_marcar_salida"
+            android:layout_width="320sp"
+            android:layout_height="55sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/botones_fragmentos"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:onClick="met_marca_salida"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:text="@string/smsalida"
+            android:textColor="@drawable/color_btn_fragmento_salida"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mostrarfecha"
+            app:layout_constraintVertical_bias="0.566" />
+
+        <ImageButton
+            android:id="@+id/alarma_notificaciones"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:onClick="sistema_alarma"
+            android:src="@drawable/ic_alarm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.348"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mostrarfecha" />
+
+        <ImageButton
+            android:id="@+id/justificar"
+            android:layout_width="51dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:onClick="justificaciones"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.651"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mostrarfecha"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_justificacion"
+            tools:ignore="VectorDrawableCompat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

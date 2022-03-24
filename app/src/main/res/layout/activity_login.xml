@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/color_splashscreen">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="124dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logotipo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assist Control"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/registrarse_login"
+            android:layout_width="147sp"
+            android:layout_height="38sp"
+            android:background="@drawable/botones_log_sign_in"
+            android:paddingTop="5sp"
+            android:text="Registrarse"
+            android:textAlignment="center"
+            android:textColor="@drawable/color_btn_log_sign_in"
+            android:textSize="21sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="0.289" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="287dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="#66888D9B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="308dp"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="57sp"
+                tools:layout_editor_absoluteY="255sp">
+
+                <EditText
+                    android:id="@+id/identificador_login"
+                    android:layout_width="277dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="16dp"
+                    android:digits="aábcdeéfghiíjklmnñoópqrstuúvwxyzAÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUÚVWXYZ1234567890_-@."
+                    android:ems="10"
+                    android:hint="Correo electrónico"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/color_flotante"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout"
+                    android:layout_width="277dp"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/identificador_login"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pass_identificador_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_marginTop="20sp"
+                        android:digits="aábcdeéfghiíjklmnñoópqrstuúvwxyzAÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUÚVWXYZ1234567890_-."
+                        android:drawableLeft="@drawable/ic_action_password"
+                        android:ems="10"
+                        android:textSize="14sp"
+                        android:hint="Contraseña"
+                        android:inputType="textPassword"
+                        android:textColor="@color/color_flotante"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/identificador_login" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/iniciar_sesion"
+                    android:layout_width="147sp"
+                    android:layout_height="38sp"
+                    android:layout_marginBottom="16sp"
+                    android:background="@drawable/botones_log_sign_in"
+                    android:text="Iniciar Sesión"
+                    android:textColor="@drawable/color_btn_log_sign_in"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mantener_sesion"
+                    app:layout_constraintVertical_bias="0.172" />
+
+                <CheckBox
+                    android:id="@+id/mantener_sesion"
+                    android:layout_width="210dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Mantener sesión iniciada."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+                <TextView
+                    android:id="@+id/olvidocontraseña"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Has olvidado tu contraseña?"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iniciar_sesion"
+                    app:layout_constraintVertical_bias="0.644" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

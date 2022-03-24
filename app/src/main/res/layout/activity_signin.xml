@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/color_splashscreen">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="337dp"
+            android:layout_height="606dp"
+            app:cardBackgroundColor="#66888D9B"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.592">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/contenedor"
+                android:layout_width="match_parent"
+                android:layout_height="597sp"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.457"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <EditText
+                        android:id="@+id/primernombre_signin"
+                        android:layout_width="302sp"
+                        android:layout_height="wrap_content"
+                        android:digits="aãâáàbcçdeéfghiíjklmnoõôóòpqrstuúvwxyzAÃÂÁÀBCÇDEÉFGHIÍJKLMNOÕÔÓÒPQRSTUÚVWXYZ"
+                        android:ems="10"
+                        android:hint="Primer Nombre"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@color/color_flotante"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.476"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.457"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
+
+                    <EditText
+                        android:id="@+id/segundonombre_signin"
+                        android:layout_width="302sp"
+                        android:layout_height="wrap_content"
+                        android:digits="aãâáàbcçdeéfghiíjklmnoõôóòpqrstuúvwxyz AÃÂÁÀBCÇDEÉFGHIÍJKLMNOÕÔÓÒPQRSTUÚVWXYZ"
+                        android:ems="10"
+                        android:hint="Segundo Nombre             (Opcional)"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@color/color_flotante"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.476"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.457"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
+
+                    <EditText
+                        android:id="@+id/primerapellido_signin"
+                        android:layout_width="302sp"
+                        android:layout_height="wrap_content"
+                        android:digits="aãâáàbcçdeéfghiíjklmnoõôóòpqrstuúvwxyzAÃÂÁÀBCÇDEÉFGHIÍJKLMNOÕÔÓÒPQRSTUÚVWXYZ"
+                        android:ems="10"
+                        android:hint="Primer Apellido"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@color/color_flotante"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.476"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6"
+                        tools:layout_editor_absoluteY="157dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.542"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout7">
+
+                    <EditText
+                        android:id="@+id/segundoapellido_signin"
+                        android:layout_width="302sp"
+                        android:layout_height="wrap_content"
+                        android:digits="aãâáàbcçdeéfghiíjklmnoõôóòpqrstuúvwxyzAÃÂÁÀBCÇDEÉFGHIÍJKLMNOÕÔÓÒPQRSTUÚVWXYZ"
+                        android:ems="10"
+                        android:hint="Segundo Apellido             (Opcional)"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@color/color_flotante"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.476"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayout8" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <EditText
+                    android:id="@+id/fechanacimiento_signin"
+                    android:layout_width="186sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Fecha de Nacimiento"
+                    android:inputType="date"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout8" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="100sp"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.075"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fechanacimiento_signin">
+
+                    <RadioButton
+                        android:id="@+id/hombre_signin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:checked="true"
+                        android:text="Hombre"
+                        android:textColor="@color/color_flotante"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/mujer_signin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:text="Mujer"
+                        android:textColor="@color/color_flotante"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.517"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGroup2">
+
+                    <EditText
+                        android:id="@+id/identificador_signin"
+                        android:layout_width="279sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16sp"
+                        android:digits="aábcdeéfghiíjklmnñoópqrstuúvwxyzAÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUÚVWXYZ1234567890_-@."
+                        android:ems="10"
+                        android:textSize="14sp"
+                        android:hint="Correo Electrónico"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/color_flotante"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.51"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/pass_identificador_signin"
+                        android:layout_width="279sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8sp"
+                        android:digits="aábcdeéfghiíjklmnñoópqrstuúvwxyzAÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUÚVWXYZ1234567890_-."
+                        android:drawableLeft="@drawable/ic_action_password"
+                        android:ems="10"
+                        android:textSize="14sp"
+                        android:hint="Contraseña"
+                        android:inputType="textPassword"
+                        android:textColor="@color/color_flotante"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.51"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/identificador_signin" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/registrarse_signin"
+                    android:layout_width="147sp"
+                    android:layout_height="38sp"
+                    android:background="@drawable/botones_log_sign_in"
+                    android:text="Registrarse"
+                    android:textColor="@drawable/color_btn_log_sign_in"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+                    app:layout_constraintVertical_bias="0.467" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
